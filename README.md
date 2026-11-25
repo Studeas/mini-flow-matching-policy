@@ -4,10 +4,33 @@ A small example of conditional flow matching for PushT. An MLP learns to turn
 noise into a sequence of actions, given the current state of the pusher and the
 T-shaped block. The model uses state arrays, with no images or observation history.
 
+## Examples
+
+Training loss and a test rollout from a 600-epoch run.
+
+<table>
+  <tr>
+    <th width="50%">Training and validation loss</th>
+    <th width="50%">Test rollout</th>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="examples/loss.png" alt="Training and validation loss" width="440">
+    </td>
+    <td align="center" valign="middle">
+      <img src="examples/test.gif" alt="Animated PushT test rollout" width="280">
+    </td>
+  </tr>
+</table>
+
+The animation shows the full episode at its original speed.
+The [MP4 video](examples/test.mp4) is also available.
+
 ## Code
 
 ```text
 mini-flow-matching/
+├── examples/              # Loss plot, test video, and GIF preview
 ├── mini-flow-matching.py   # Model, flow matching loss, sampling, and training
 ├── data_prep.py            # Data download, episode split, and DataLoader
 ├── visualize.py            # Loss curves, coverage evaluation, and videos
