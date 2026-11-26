@@ -1,8 +1,10 @@
-# Mini Flow Matching · PushT
+# Mini Flow Matching (Push-T)
 
 A small example of conditional flow matching for PushT. An MLP learns to turn
 noise into a sequence of actions, given the current state of the pusher and the
 T-shaped block. The model uses state arrays, with no images or observation history.
+
+[blog: Flow Matching in Robot Learning](https://studeas.github.io/blogs/flow-matching-robot-learning/)
 
 ## Examples
 
